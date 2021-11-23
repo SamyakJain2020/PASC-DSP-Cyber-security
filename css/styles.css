@@ -88,7 +88,26 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+.google-form{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
 
+}
+.google-form-item{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+#contact{
+  background-image: url('https://wallpapercave.com/wp/wp2406532.png');
+}
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -592,8 +611,9 @@ progress {
 .blockquote-footer {
   margin-top: -1rem;
   margin-bottom: 1rem;
-  font-size: 0.875em;
-  color: #6c757d;
+  font-size: 0.975em;
+  color: #fcf806;
+  
 }
 .blockquote-footer::before {
   content: "— ";
@@ -11407,11 +11427,15 @@ p {
 }
 header.masthead {
   padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  padding-bottom: 10.5rem;
   text-align: center;
+  display: flex;
+  align-items: center;
   color: #fff;
-  /* background-image: url("../assets/img/header-bg.jpg"); */
-  background-color: rgba(34, 8, 59 , 0.8);
+  height: 100vh; 
+  background-size: 100px;
+  background-image: url("https://wallpapercave.com/wp/wp2406516.jpg");
+  /* background-color: rgba(34, 8, 59 , 0.8); */
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11720,10 +11744,11 @@ header.masthead .masthead-heading {
 }
 
 section#contact {
-  background-color: #212529;
-  background-image: url("../assets/img/");
+  /* background-color: #212529; */
+  /* background-image: url("https://wallpapercave.com/wp/wp2406532.png"); samyak */
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 section#contact .section-heading {
   color: #fff;
